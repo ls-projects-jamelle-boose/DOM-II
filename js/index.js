@@ -83,6 +83,7 @@ const footer = document.querySelector(".footer p")
 //Focus footer event handler
 footer.addEventListener('copy', function (event) {
   event.target.style.color = 'green'
+  console.log(event)
 })
 
 
@@ -110,4 +111,19 @@ const h2PickYourDestination = document.querySelector('.content-destination h2')
 h2PickYourDestination.addEventListener('dblclick', function (event) {
   h2PickYourDestination.innerHTML = 'You have been double clicked.'
 })
+
+// [ ] Nest two similar events somewhere in the site and prevent the event propagation properly
+const textContent = document.querySelector('.text-content')
+const advHead = document.querySelector('.text-content h2')
+
+textContent.addEventListener('click', function (event) {
+  alert('textContent Div fired')
+})
+
+advHead.addEventListener('click', function (event) {
+  alert('advHead fired')
+  event.stopPropagation()
+})
+
+
 
