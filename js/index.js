@@ -125,5 +125,8 @@ advHead.addEventListener('click', function (event) {
   event.stopPropagation()
 })
 
+// [ ] Stop the navigation from items from refreshing the page by using preventDefault()
 
-
+navList.forEach(link => link.addEventListener('click', function (event) {
+  event.preventDefault()
+}))
