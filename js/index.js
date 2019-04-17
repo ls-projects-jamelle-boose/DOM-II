@@ -57,22 +57,12 @@ headH2.addEventListener('drag', function (event) {
   alert('Where are you dragging that?')
 })
 
-// Drop h2 event handler
-// headH2.addEventListener('drop', function (event) {
-//   alert('Thanks for dropping me.')
-// })
-
-
-
-
 
 // [ ] load
 // Load body is complete image event handler
 window.addEventListener('load', function (event) {
   alert('Body has completed loading.')
 })
-
-
 
 
 
@@ -103,7 +93,7 @@ window.addEventListener('scroll', function (event) {
 
 // [ ] select
 
-
+// ?????????????
 
 // [ ] dblclick
 const h2PickYourDestination = document.querySelector('.content-destination h2')
